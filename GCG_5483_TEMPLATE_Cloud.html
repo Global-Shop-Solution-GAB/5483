@@ -1,0 +1,159 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>#Title WO Proress#</title>
+    <!-- jquery in below script is for reloading page when bottom is reached with auto scroll-->
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(window).load( function() {
+
+    });
+
+    //sleep and redirect. GAB script will determine the sleep time based on the setup in the Maintenance program
+	setTimeout(function (){
+			location.reload(1);
+		}, #sleep);
+    </script>
+</head>
+
+<body style="padding-left: 10px; padding-right: 10px;">
+
+    <div class="topOuterDiv">
+        <div class="topLeftDiv" align="left">
+            #YourCompanyLogo
+        </div>
+        <div class="topMidDiv" align="center">
+            <h1 style="color:forestgreen">WO In Progress</h1>
+        </div>
+        <div class="topRightDiv">
+            <img src="#Logo" align="right" />
+        </div>
+        <div ="style: clear:both;"></div>
+    </div>
+
+    <div class="outerDiv">
+        <div class="leftDiv" align="left">
+            &nbsp
+        </div>
+        <div class="rightDiv" align="right">
+            <a href="https://www.globalshopsolutions.com/">GlobalShopSolutions.com</a> | 1.800.364.5958
+        </div>
+        <div ="style: clear:both;"></div>
+    </div>
+    <h5>&nbsp</h5>
+
+    <div class="outerDiv">
+        <div class="leftDiv" align="left">
+            #Updated
+        </div>
+        <div class="rightDiv" align="right">
+            #DeptGroupShift
+        </div>
+        <div ="style: clear:both;"></div>
+    </div>
+    <div>&nbsp</div>
+
+    <style>
+        .topOuterDiv {
+            width: 100%;
+            margin: 0px auto;
+        }
+
+        .topLeftDiv {
+            width: 30%;
+            float: left;
+        }
+
+        .topMidDiv {
+            width: 40%;
+            float: left;
+        }
+
+        .topRightDiv {
+            width: 30%;
+            float: right;
+        }
+
+        /**/
+
+        .outerDiv {
+            width: 100%;
+            margin: 0px auto;
+        }
+
+        .leftDiv {
+            width: 50%;
+            float: left;
+        }
+
+        .rightDiv {
+            width: 50%;
+            float: right;
+        }
+    </style>
+
+
+    <div>
+        
+        <div class="MainDiv" id="MainDiv"  style=" overflow-y: scroll;">
+            <table class="TFtable">
+                <thead>
+                    <tr>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:2%; text-align: center; border-radius: 10px 0 0 0;">Status</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:4%; text-align: center;">Emp.ID</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:17%; text-align: left;">Name</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:6%; text-align: center;">Job</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:4%; text-align: center;">Suffix</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:6%; text-align: center;">Seq</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:4%; text-align: center;">WC</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:17%; text-align: left;">Part Number</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:24%; text-align: left;">Description</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:8%; text-align: right;">Hrs Total</td>
+                        <td style="opacity: 1; background: #017550; height:50px;color: #FFFFFF;font-size: 16px; width:8%; text-align: right; border-radius: 0 10px 0 0;">Hrs Est</td>
+                    </tr>
+                </thead>   
+                <tbody>
+                    #table
+                </tbody>
+            </table>
+        </div>
+    </div>
+ 
+
+    <div style="position: fixed ;  text-align: center;  bottom: 0;  width: 100%; ">
+            <table>
+                <thead>
+
+                    <tr>
+                        <!--Red-->
+                        <td style="background: #FF0000; color: #FFFFFF;">Logged in But Not in Work Order</td>
+                        <!--Green-->
+                        <td style="background: #008000; color: #FFFFFF;">On Direct Labor</td>
+                        <!--Yellow-->
+                        <td style="background: #FFFF00; color: #000000;">On Indirect Labor</td>
+                        <!--Red-->
+                        <td style="background: LightSalmon; color: #FFFFFF;">Acual Hours > Estimate Hours</td>
+                    </tr>
+                </thead>
+            </table>
+    </div>
+
+    <style>
+        /* Define the background color for all the EVEN background rows  */
+        .TFtable tr:nth-child(odd) {
+            background: none;
+        }
+
+        .TFtable tr:nth-child(even) {
+            background: #E6E7E8;
+            background: rgb(221, 222, 223);
+            background: rgba(221, 222, 223, .5);
+        }
+    </style>
+
+
+
+</body>
+</html>
